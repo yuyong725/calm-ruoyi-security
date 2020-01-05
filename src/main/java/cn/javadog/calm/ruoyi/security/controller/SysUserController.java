@@ -6,7 +6,6 @@ import cn.javadog.calm.ruoyi.security.constant.UserConstants;
 import cn.javadog.calm.ruoyi.security.domain.SysUser;
 import cn.javadog.calm.ruoyi.security.service.ISysRoleService;
 import cn.javadog.calm.ruoyi.security.service.ISysUserService;
-import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.utils.AjaxResult;
 import cn.javadog.calm.ruoyi.security.utils.SecurityUtils;
 import cn.javadog.calm.ruoyi.security.utils.StringUtils;

@@ -5,8 +5,8 @@ import java.util.Set;
 
 import cn.javadog.calm.ruoyi.security.domain.SysUser;
 import cn.javadog.calm.ruoyi.security.service.ISysMenuService;
+import cn.javadog.calm.ruoyi.security.service.ISysPermissionService;
 import cn.javadog.calm.ruoyi.security.service.ISysRoleService;
-import cn.javadog.calm.ruoyi.security.service.SysPermissionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,7 +15,7 @@ import org.springframework.stereotype.Service;
  * @date 2019年12月30日 17:07:00
  */
 @Service
-public class SysPermissionServiceImpl implements SysPermissionService {
+public class SysPermissionServiceImpl implements ISysPermissionService {
 
 	@Autowired
 	private ISysRoleService roleService;

@@ -1,4 +1,4 @@
-package cn.javadog.calm.ruoyi.security.service.impl;
+package cn.javadog.calm.ruoyi.security.handler;
 
 import java.util.Objects;
 
@@ -6,8 +6,8 @@ import cn.javadog.calm.ruoyi.security.constant.UserStatus;
 import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.domain.SysUser;
 import cn.javadog.calm.ruoyi.security.exception.BaseException;
+import cn.javadog.calm.ruoyi.security.service.ISysPermissionService;
 import cn.javadog.calm.ruoyi.security.service.ISysUserService;
-import cn.javadog.calm.ruoyi.security.service.SysPermissionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private ISysUserService userService;
 
     @Autowired
-    private SysPermissionService permissionService;
+    private ISysPermissionService permissionService;
 
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException

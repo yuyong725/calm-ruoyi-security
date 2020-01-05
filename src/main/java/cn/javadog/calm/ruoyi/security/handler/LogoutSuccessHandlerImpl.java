@@ -9,7 +9,6 @@ import cn.javadog.calm.ruoyi.security.constant.Constants;
 import cn.javadog.calm.ruoyi.security.constant.HttpStatus;
 import cn.javadog.calm.ruoyi.security.utils.AjaxResult;
 import cn.javadog.calm.ruoyi.security.domain.LoginUser;
-import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.task.AsyncFactory;
 import cn.javadog.calm.ruoyi.security.task.AsyncManager;
 import cn.javadog.calm.ruoyi.security.utils.ServletUtils;

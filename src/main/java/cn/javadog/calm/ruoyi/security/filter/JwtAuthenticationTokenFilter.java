@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import cn.javadog.calm.ruoyi.security.domain.LoginUser;
-import cn.javadog.calm.ruoyi.security.service.TokenService;
+import cn.javadog.calm.ruoyi.security.handler.TokenService;
 import cn.javadog.calm.ruoyi.security.utils.SecurityUtils;
 import cn.javadog.calm.ruoyi.security.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

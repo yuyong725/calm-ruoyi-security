@@ -1,4 +1,4 @@
-package cn.javadog.calm.ruoyi.security.service.impl;
+package cn.javadog.calm.ruoyi.security.handler;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
@@ -9,7 +9,6 @@ import java.util.concurrent.TimeUnit;
 import cn.javadog.calm.ruoyi.security.constant.Constants;
 import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.redis.RedisCache;
-import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.utils.AddressUtils;
 import cn.javadog.calm.ruoyi.security.utils.IdUtils;
 import cn.javadog.calm.ruoyi.security.utils.IpUtils;
@@ -28,7 +27,7 @@ import org.springframework.stereotype.Service;
  * @date 2019年12月30日 17:11:00
  */
 @Service
-public class TokenServiceImpl implements TokenService {
+public class TokenService {
 
 	/**
 	 * 令牌自定义标识
@@ -62,7 +61,6 @@ public class TokenServiceImpl implements TokenService {
 	 *
 	 * @return 用户信息
 	 */
-	@Override
 	public LoginUser getLoginUser(HttpServletRequest request)
 	{
 		// 获取请求携带的令牌
@@ -82,7 +80,6 @@ public class TokenServiceImpl implements TokenService {
 	/**
 	 * 设置用户身份信息
 	 */
-	@Override
 	public void setLoginUser(LoginUser loginUser)
 	{
 		if (Objects.nonNull(loginUser) && StringUtils.isNotEmpty(loginUser.getToken()))
@@ -95,7 +92,6 @@ public class TokenServiceImpl implements TokenService {
 	/**
 	 * 删除用户身份信息
 	 */
-	@Override
 	public void delLoginUser(String token)
 	{
 		if (StringUtils.isNotEmpty(token))
@@ -111,7 +107,6 @@ public class TokenServiceImpl implements TokenService {
 	 * @param loginUser 用户信息
 	 * @return 令牌
 	 */
-	@Override
 	public String createToken(LoginUser loginUser)
 	{
 		String token = IdUtils.fastUUID();
@@ -129,7 +124,6 @@ public class TokenServiceImpl implements TokenService {
 	 *
 	 * @return 令牌
 	 */
-	@Override
 	public void verifyToken(LoginUser loginUser)
 	{
 		long expireTime = loginUser.getExpireTime();
@@ -147,7 +141,6 @@ public class TokenServiceImpl implements TokenService {
 	 *
 	 * @param loginUser 登录信息
 	 */
-	@Override
 	public void refreshToken(LoginUser loginUser)
 	{
 		loginUser.setLoginTime(System.currentTimeMillis());
@@ -162,7 +155,6 @@ public class TokenServiceImpl implements TokenService {
 	 *
 	 * @param loginUser 登录信息
 	 */
-	@Override
 	public void setUserAgent(LoginUser loginUser)
 	{
 		UserAgent userAgent = UserAgent.parseUserAgentString(ServletUtils.getRequest().getHeader("User-Agent"));
@@ -207,7 +199,6 @@ public class TokenServiceImpl implements TokenService {
 	 * @param token 令牌
 	 * @return 用户名
 	 */
-	@Override
 	public String getUsernameFromToken(String token)
 	{
 		Claims claims = parseToken(token);

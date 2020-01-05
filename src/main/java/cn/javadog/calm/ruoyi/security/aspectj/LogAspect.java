@@ -8,7 +8,7 @@ import java.util.Map;
 import cn.javadog.calm.ruoyi.security.annotation.Log;
 import cn.javadog.calm.ruoyi.security.constant.BusinessStatus;
 import cn.javadog.calm.ruoyi.security.domain.SysOperLog;
-import cn.javadog.calm.ruoyi.security.service.TokenService;
+import cn.javadog.calm.ruoyi.security.handler.TokenService;
 import cn.javadog.calm.ruoyi.security.task.AsyncFactory;
 import cn.javadog.calm.ruoyi.security.task.AsyncManager;
 import cn.javadog.calm.ruoyi.security.utils.IpUtils;

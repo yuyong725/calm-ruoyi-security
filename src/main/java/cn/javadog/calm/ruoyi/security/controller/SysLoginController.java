@@ -6,10 +6,10 @@ import java.util.Set;
 import cn.javadog.calm.ruoyi.security.constant.Constants;
 import cn.javadog.calm.ruoyi.security.domain.SysMenu;
 import cn.javadog.calm.ruoyi.security.domain.SysUser;
+import cn.javadog.calm.ruoyi.security.handler.TokenService;
 import cn.javadog.calm.ruoyi.security.service.ISysLoginService;
 import cn.javadog.calm.ruoyi.security.service.ISysMenuService;
-import cn.javadog.calm.ruoyi.security.service.SysPermissionService;
-import cn.javadog.calm.ruoyi.security.service.TokenService;
+import cn.javadog.calm.ruoyi.security.service.ISysPermissionService;
 import cn.javadog.calm.ruoyi.security.utils.AjaxResult;
 import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.utils.ServletUtils;
@@ -32,7 +32,7 @@ public class SysLoginController {
 	private ISysMenuService menuService;
 
 	@Autowired
-	private SysPermissionService permissionService;
+	private ISysPermissionService permissionService;
 
 	@Autowired
 	private TokenService tokenService;
