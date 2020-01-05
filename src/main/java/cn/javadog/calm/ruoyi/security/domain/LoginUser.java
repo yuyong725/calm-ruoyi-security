@@ -1,4 +1,4 @@
-package cn.javadog.calm.ruoyi.security.utils;
+package cn.javadog.calm.ruoyi.security.domain;
 
 import java.util.Collection;
 import java.util.Set;

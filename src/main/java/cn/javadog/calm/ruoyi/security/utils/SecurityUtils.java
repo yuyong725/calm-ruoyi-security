@@ -1,6 +1,7 @@
 package cn.javadog.calm.ruoyi.security.utils;
 
 import cn.javadog.calm.ruoyi.security.constant.HttpStatus;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.exception.CustomException;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;

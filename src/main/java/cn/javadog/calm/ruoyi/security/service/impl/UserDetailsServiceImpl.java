@@ -3,7 +3,7 @@ package cn.javadog.calm.ruoyi.security.service.impl;
 import java.util.Objects;
 
 import cn.javadog.calm.ruoyi.security.constant.UserStatus;
-import cn.javadog.calm.ruoyi.security.utils.LoginUser;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.domain.SysUser;
 import cn.javadog.calm.ruoyi.security.exception.BaseException;
 import cn.javadog.calm.ruoyi.security.service.ISysUserService;

@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 import cn.javadog.calm.ruoyi.security.constant.Constants;
-import cn.javadog.calm.ruoyi.security.utils.LoginUser;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.redis.RedisCache;
 import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.utils.AddressUtils;

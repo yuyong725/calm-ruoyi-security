@@ -12,7 +12,7 @@ import cn.javadog.calm.ruoyi.security.service.ISysLoginService;
 import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.task.AsyncFactory;
 import cn.javadog.calm.ruoyi.security.task.AsyncManager;
-import cn.javadog.calm.ruoyi.security.utils.LoginUser;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.utils.MessageUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;

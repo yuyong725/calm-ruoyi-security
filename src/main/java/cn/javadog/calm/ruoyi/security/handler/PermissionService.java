@@ -4,7 +4,7 @@ import java.util.Set;
 
 import cn.javadog.calm.ruoyi.security.domain.SysRole;
 import cn.javadog.calm.ruoyi.security.service.TokenService;
-import cn.javadog.calm.ruoyi.security.utils.LoginUser;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.utils.ServletUtils;
 import cn.javadog.calm.ruoyi.security.utils.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;

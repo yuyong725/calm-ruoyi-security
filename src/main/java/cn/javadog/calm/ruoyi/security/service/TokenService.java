@@ -2,7 +2,7 @@ package cn.javadog.calm.ruoyi.security.service;
 
 import javax.servlet.http.HttpServletRequest;
 
-import cn.javadog.calm.ruoyi.security.utils.LoginUser;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 
 /**
  * @author 余勇

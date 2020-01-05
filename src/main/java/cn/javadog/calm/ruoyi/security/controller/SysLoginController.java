@@ -11,7 +11,7 @@ import cn.javadog.calm.ruoyi.security.service.ISysMenuService;
 import cn.javadog.calm.ruoyi.security.service.SysPermissionService;
 import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.utils.AjaxResult;
-import cn.javadog.calm.ruoyi.security.utils.LoginUser;
+import cn.javadog.calm.ruoyi.security.domain.LoginUser;
 import cn.javadog.calm.ruoyi.security.utils.ServletUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
