@@ -6,11 +6,11 @@ import java.util.Set;
 import cn.javadog.calm.ruoyi.security.constant.Constants;
 import cn.javadog.calm.ruoyi.security.domain.SysMenu;
 import cn.javadog.calm.ruoyi.security.domain.SysUser;
+import cn.javadog.calm.ruoyi.security.service.ISysLoginService;
 import cn.javadog.calm.ruoyi.security.service.ISysMenuService;
 import cn.javadog.calm.ruoyi.security.service.SysPermissionService;
 import cn.javadog.calm.ruoyi.security.service.TokenService;
 import cn.javadog.calm.ruoyi.security.utils.AjaxResult;
-import cn.javadog.calm.ruoyi.security.service.SysLoginService;
 import cn.javadog.calm.ruoyi.security.utils.LoginUser;
 import cn.javadog.calm.ruoyi.security.utils.ServletUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class SysLoginController {
 
 	@Autowired
-	private SysLoginService loginService;
+	private ISysLoginService loginService;
 
 	@Autowired
 	private ISysMenuService menuService;
@@ -77,8 +77,6 @@ public class SysLoginController {
 
 	/**
 	 * 获取路由信息
-	 *
-	 * @return 路由信息
 	 */
 	@GetMapping("getRouters")
 	public AjaxResult getRouters() {

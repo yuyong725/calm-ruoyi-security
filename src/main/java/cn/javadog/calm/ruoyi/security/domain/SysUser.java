@@ -72,10 +72,6 @@ public class SysUser extends BaseEntity {
 	@Transient
 	private Long[] roleIds;
 
-	/** 岗位组 */
-	@Transient
-	private Long[] postIds;
-
 	public SysUser() { }
 
 	public SysUser(Long userId)

@@ -1,6 +1,5 @@
 package cn.javadog.calm.ruoyi.security.controller;
 
-import java.util.List;
 
 import cn.javadog.calm.ruoyi.security.annotation.Log;
 import cn.javadog.calm.ruoyi.security.constant.BusinessType;
